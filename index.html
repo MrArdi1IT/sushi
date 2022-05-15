@@ -4,36 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>KazahSushiWeb</title>
 </head>
 <body>
     <main class="main">
         <aside class="side-left">
-            <a class="logo" href="/">
-                <img src="./img/Logo.png" alt="">
+            <a href="/" class="logo">
+                <img class="logo__img" src="./img/Logo.png" alt="logo">
             </a>
             <div class="hr"></div>
             <nav>
                 <ul class="nav__list">
-                    <li class="nav__item nav__item--pizza"><a href="" class="na__link">Пицца</a></li>
-                    <li class="nav__item nav__item--set"><a href="" class="na__link">Сеты</a></li>
-                    <li class="nav__item nav__item--"><a href="" class="na__link">WOK</a></li>
-                    <li class="nav__item nav__item--rolls"><a href="" class="na__link">Роллы</a></li>
-                    <li class="nav__item nav__item--sushi"><a href="" class="na__link">Суши</a></li>
-                    <li class="nav__item nav__item--salad"><a href="" class="na__link">Салаты</a></li>
-                    <li class="nav__item nav__item--soups"><a href="" class="na__link">Супы</a></li>
-                    <li class="nav__item nav__item--corn-dog"><a href="" class="na__link">Корн доги</a></li>
-                    <li class="nav__item nav__item--drinks"><a href="" class="na__link">Напитки</a></li>
-                    <li class="nav__item nav__item--sale"><a href="" class="na__link">Акции</a></li>
+                    <li class="nav__item nav__item__pizza"><a href="" class="nav__link">
+                        Пицца
+                    </a></li>
+                    <li class="nav__item nav__item__set"><a href="" class="nav__link">
+                        Сеты
+                    </a></li>
+                    <li class="nav__item nav__item__wok"><a href="" class="nav__link">
+                        WOK
+                    </a></li>
+                    <li class="nav__item nav__item__roll"><a href="" class="nav__link">
+                        Роллы
+                    </a></li>
+                    <li class="nav__item nav__item__sushi"><a href="" class="nav__link">
+                        Суши
+                    </a></li>
+                    <li class="nav__item nav__item__salad"><a href="" class="nav__link">
+                        Салаты
+                        <span class="nav__shortly">скоро</span>
+                    </a></li>
+                    <li class="nav__item nav__item__soup"><a href="" class="nav__link">
+                        Супы
+                        <span class="nav__shortly">скоро</span>
+                    </a></li>
+                    <li class="nav__item nav__item__corn_dog"><a href="" class="nav__link">
+                        Корн доги
+                    </a></li>
+                    <li class="nav__item nav__item__drink"><a href="" class="nav__link">
+                        Напитки
+                    </a></li>
+                    <li class="nav__item nav__item__sale"><a href="" class="nav__link">
+                        Акции
+                    </a></li>
                 </ul>
-            </nav>
+            </nav> 
         </aside>
-        <section class="content">main</section>
-        <aside class="side-right">Cart</aside>
+        <section class="content"> 
+            <div class="header">
+                <div class="header__left">
+                    <p class="phone-text">Наш телефон</p>
+                    <a href="tel:+996 705 188 955" class="phone">+996 705 188 955</a>
+                    <a href="tel:+996 555 188 955" class="phone">+996 555 188 955</a>
+                    <p class="work-time">работаем с 10:00 до 00:00</p>
+                </div>
+                <div class="header__right">
+                    <div class="location">
+                        <p class="location__text">Город:</p>
+                        <p class="location__city">Бишкек</p>
+                    </div>
+                    <div class="header__menu">
+                        <nav class="list">
+                            <ul>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="search"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="side-rigth"> <div class="cart">
+            <div class="cart__inner">
+                <h2 class="cart__title">Ваша корзина пуста</h2>
+                <p class="cart__subtitle">Добавте же скорее что-нибудь</p>
+            </div>
+            <h3 class="cart__delivery">Бесплатная доставка от 800 СОМ</h3>
+        </div>
+        <div class="cart__address">
+            <div class="cart__map">
+                <span class="cart__circle"></span>
+                <img src="./img/map.jpg" alt="Я КАРТА Я КАРТА Я КАРТА Я КАРТА">
+                <div class="cart__map__marker"></div>
+            </div>
+            <h2 class="cart__title">Укажите адрес</h2>
+                <p class="cart__subtitle">И узнайте время доставки</p>
+        </div>
+     </aside>
     </main>
-    <script src="./index.js">
-</script>
+<script src="index.js"></script>
 </body>
 </html>
