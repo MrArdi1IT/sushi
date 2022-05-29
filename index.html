@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>KazahSushiWeb</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <main class="main">
@@ -56,8 +57,8 @@
             <div class="header">
                 <div class="header__left">
                     <p class="phone-text">Наш телефон</p>
-                    <a href="tel:+996 705 188 955" class="phone">+996 705 188 955</a>
-                    <a href="tel:+996 555 188 955" class="phone">+996 555 188 955</a>
+                    <a href="tel:+996705188955" class="phone">+996 705 188 955</a>
+                    <a href="tel:+996555188955" class="phone">+996 555 188 955</a>
                     <p class="work-time">работаем с 10:00 до 00:00</p>
                 </div>
                 <div class="header__right">
@@ -80,6 +81,49 @@
                     </div>
                 </div>
             </div>
+            <div class="sushi-slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/swiper-image.png" alt="swiper-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper-image.png" alt="swiper-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper-image.png" alt="swiper-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper-image.png" alt="swiper-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper-image.png" alt="swiper-image">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="products">
+               <div class="container">
+                    <a href="#" class="products__item">
+                        <p>Чикен</p>
+                    </a>
+                    <div class="products__item">
+                        <a href="#" class="products__items_half">
+                            <p>С угрем</p>
+                        </a>
+                        <a href="#" class="products__items_half">
+                            <p>Корн дог</p>
+                        </a>
+                    </div>
+                    <a href="#"class="products__item">
+                        <p>Пицца</p>
+                    </a>
+                    <a href="#" class="products__item">
+                        <p>Акции</p>
+                    </a>
+               </div>
+            </div>
         </section>
         <aside class="side-rigth"> <div class="cart">
             <div class="cart__inner">
@@ -99,6 +143,8 @@
         </div>
      </aside>
     </main>
-<script src="index.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
 </body>
 </html>
